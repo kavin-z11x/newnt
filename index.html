@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-IN" class="scroll-smooth">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -11,7 +9,7 @@
 
     <meta name="google-site-verification" content="cAnASILbBAXLe_b0OMQ-mrVxHFThQucODDDI33KrO6A" />
 
-    <!-- TITLE & DESCRIPTION (title ~60 chars, description ~155 chars so Google does not truncate) -->
+    <!-- TITLE & DESCRIPTION -->
     <title>Architects in Erode | Nedunthatchan Architects & Construction</title>
     <meta name="title" content="Architects in Erode | Nedunthatchan Architects & Construction" />
     <meta name="description" content="Nedunthatchan Architects, Erode: house design, villas, interiors & turnkey construction by Ar. Karthikraja G (CA/2022/149864). 5.0★ on Google. Call 9500975083." />
@@ -21,6 +19,7 @@
     <link rel="alternate" hreflang="x-default" href="https://nedunthatchan.com/" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
+    <!-- KEYWORDS (defensive; still read by some engines and AI crawlers) -->
     <meta name="keywords" content="nedunthatchan, nedunthatchan architects, erode, architects in erode, architect in erode, best architects in erode, top architects in erode, architects near me, construction company in erode, building contractors in erode, house construction erode, home builders in erode, villa design erode, interior designers in erode, house plan erode, building plan approval erode, civil engineers erode, PMC consultants erode, turnkey construction erode, commercial building design erode, kasipalayam, perundurai, bhavani, gobichettipalayam, tamil nadu architects, ஈரோடு ஆர்க்கிடெக்ட், ஈரோடு கட்டுமான நிறுவனம், வீடு வடிவமைப்பு ஈரோடு" />
     <meta name="author" content="Ar. Karthikraja G, Nedunthatchan Architects" />
     <meta name="publisher" content="Nedunthatchan Architects" />
@@ -60,25 +59,36 @@
     <meta name="twitter:image" content="https://nedunthatchan.com/designs/angular-crest-villa.webp" />
     <meta name="twitter:image:alt" content="Luxury villa by Nedunthatchan Architects, Erode" />
 
-    <!-- PERFORMANCE (Core Web Vitals are a ranking factor) -->
+    <!-- PERFORMANCE / CORE WEB VITALS -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" href="/designs/angular-crest-villa.webp" fetchpriority="high" />
+    <link rel="preload" as="image"
+          href="/designs/angular-crest-villa.webp"
+          imagesrcset="/designs/angular-crest-villa-640.webp 640w,
+                       /designs/angular-crest-villa-1200.webp 1200w,
+                       /designs/angular-crest-villa.webp 1920w"
+          imagesizes="(max-width: 768px) 100vw, 1200px"
+          fetchpriority="high" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+Tamil:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- STRUCTURED DATA -->
+    <!-- STRUCTURED DATA — the core of local entity SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": ["ArchitecturalFirm", "GeneralContractor", "LocalBusiness"],
+          "@type": ["ArchitecturalFirm", "GeneralContractor"],
           "@id": "https://nedunthatchan.com/#organization",
           "name": "Nedunthatchan Architects",
           "alternateName": ["Nedunthatchan", "NT Architects", "நெடுந்தச்சன் ஆர்க்கிடெக்ட்ஸ்", "Nedunthatchan Architects Erode"],
           "url": "https://nedunthatchan.com",
-          "logo": "https://nedunthatchan.com/logo.png",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://nedunthatchan.com/logo.png",
+            "width": 512,
+            "height": 512
+          },
           "image": [
             "https://nedunthatchan.com/designs/angular-crest-villa.webp",
             "https://nedunthatchan.com/designs/velum-mayilum-central-courtyard-mandapam.jpg",
@@ -114,13 +124,14 @@
           },
           "geo": { "@type": "GeoCoordinates", "latitude": 11.3209, "longitude": 77.7073 },
           "hasMap": "https://maps.app.goo.gl/6a1k24tP26n6wzPZ8",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "120",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:30",
+              "closes": "18:30"
+            }
+          ],
           "areaServed": [
             { "@type": "City", "name": "Erode" },
             { "@type": "Place", "name": "Kasipalayam, Erode" },
@@ -165,7 +176,15 @@
           "name": "Nedunthatchan Architects",
           "alternateName": ["Nedunthatchan", "Nedunthatchan Architects Erode"],
           "publisher": { "@id": "https://nedunthatchan.com/#organization" },
-          "inLanguage": ["en-IN", "ta-IN"]
+          "inLanguage": ["en-IN", "ta-IN"],
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://nedunthatchan.com/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         },
         {
           "@type": "WebPage",
@@ -176,6 +195,18 @@
           "about": { "@id": "https://nedunthatchan.com/#organization" },
           "primaryImageOfPage": { "@type": "ImageObject", "url": "https://nedunthatchan.com/designs/angular-crest-villa.webp" },
           "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://nedunthatchan.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nedunthatchan.com/"
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -193,24 +224,4 @@
       ]
     }
     </script>
-  </head>
-  <body class="bg-[#f7f5ef] text-[#161616] antialiased selection:bg-[#161616] selection:text-[#f7f5ef] overflow-x-clip">
-    <div id="root"></div>
-
-    <!-- Crawler-visible fallback content (React replaces #root; search engines and AI crawlers that skip JS still read this) -->
-    <noscript>
-      <h1>Nedunthatchan Architects – Architects &amp; Construction Company in Erode, Tamil Nadu</h1>
-      <p>Nedunthatchan Architects, founded by Ar. Karthikraja G (Council of Architecture CA/2022/149864), designs and builds villas, houses, commercial buildings and interiors in Erode, Kasipalayam, Perundurai, Bhavani, Gobichettipalayam, Coimbatore, Tiruppur and Salem.</p>
-      <ul>
-        <li>House &amp; villa architecture in Erode</li>
-        <li>Building construction in Erode</li>
-        <li>Interior design in Erode</li>
-        <li>Project management consultancy (PMC)</li>
-        <li>Commercial architecture</li>
-      </ul>
-      <p>Address: Valayakara Street, near Lakshmi Nei Store, Kasipalayam, Erode 638002. Phone: <a href="tel:+919500975083">+91 9500975083</a>.</p>
-    </noscript>
-
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+</head>
