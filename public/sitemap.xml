@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+         <meta name="google-site-verification" content="cAnASILbBAXLe_b0OMQ-mrVxHFThQucODDDI33KrO6A" />
   
   <!-- Primary Canonical Homepage: Best Architects in Erode -->
   <url>
@@ -9,10 +10,11 @@
     <lastmod>2026-11-16T11:00:00+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://nedunthatchan.com/" />
-    <xhtml:link rel="alternate" hreflang="ta-IN" href="https://nedunthatchan.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nedunthatchan.com/" />
-
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://nedunthatchan.vercel.app/" />
+          <xhtml:link rel="alternate" hreflang="en-IN" href="https://nedunthatchan.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="ta-IN" href="https://nedunthatchan.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nedunthatchan.vercel.app/" />
+           <meta name="google-site-verification" content="cAnASILbBAXLe_b0OMQ-mrVxHFThQucODDDI33KrO6A" />
     <!-- Project Visual 1: Angular Crest Villa, Erode -->
     <image:image>
       <image:loc>https://nedunthatchan.com/designs/angular-crest-villa.webp</image:loc>
